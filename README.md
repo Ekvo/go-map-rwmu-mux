@@ -5,7 +5,7 @@
 
 Реализует **REST API**-сервис на **Go** для хранения и управления цитатами.
 
-**Основные Принципы:** DTO, SOLID  
+**Основные принципы:** DTO, SOLID  
 **Технологический стек:** Go 1.24.1  
 
 #### Возможности
@@ -70,7 +70,7 @@ README.md
 
 #### Первый способ:
 - открыть **git bash**
-- склонировать к себе на локальныю машину 
+- склонировать к себе на локальную машину 
 ```bash
 git clone https://github.com/Ekvo/go-map-rwmu-mux.git
 ```
@@ -126,14 +126,14 @@ curl http://localhost:8080/quotes/random
 ```http request
 curl http://localhost:8080/quotes?author=Confucius
 ```
-* цдаление цитаты по илдентификатору
+* удаление цитаты по ID
 ```http request
 curl -X DELETE http://localhost:8080/quotes/1
 ```
 ---
 
 #### Tests
-Для запуска тестов, после того как сервис склонирован, с `github.com/Ekvo/go-map-rwmu-mux` и вы находитесь в диретории `go-map-rwmu-mux` 
+Для запуска тестов, после того как сервис склонирован, с `github.com/Ekvo/go-map-rwmu-mux` и вы находитесь в директории `go-map-rwmu-mux` 
 ```bash
 go test ./...
 ```
