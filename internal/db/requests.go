@@ -113,7 +113,7 @@ func (p *provider) RemoveQuote(_ context.Context, id uint) error {
 		return ErrDBNotFound
 	}
 
-	// проверка в uniqQuote
+	// проверка в 'uniqQuote'
 	if _, ex := p.uniqQuote[quote.Body]; !ex {
 		log.Printf("db: RemoveQuote - internal - not exist key - {%s} in uniqQuote;", quote.Body)
 		return ErrDBInternal

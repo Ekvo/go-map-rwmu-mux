@@ -61,6 +61,7 @@ type provider struct {
 	src rand.Source
 }
 
+// конструктор для 'provider'
 func NewProvider() *provider {
 	return &provider{
 		rwMu:                  sync.RWMutex{},

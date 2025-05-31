@@ -18,7 +18,7 @@ type QuoteDeserializer struct {
 	model model.Quote `json:"-"`
 }
 
-// уонструктор
+// конструктор для QuoteDeserializer
 func NewQuoteDeserializer() *QuoteDeserializer {
 	return &QuoteDeserializer{}
 }

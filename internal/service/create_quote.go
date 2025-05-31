@@ -15,7 +15,7 @@ type AddQuote interface {
 	CreateQuote(ctx context.Context, quote model.Quote) error
 }
 
-// перед сохранение, переводи все данные 'quote' в нижний регистр
+// перед сохранением, переводим все данные 'quote' в нижний регистр
 func (s *serviceQuote) CreateQuote(ctx context.Context, quote model.Quote) error {
 	// предотвращаем повторение данных при разных регистрах
 	quote.Author = strings.ToLower(quote.Author)
