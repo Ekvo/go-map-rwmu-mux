@@ -71,7 +71,7 @@ func (cfg *Config) parse(patToFile string) error {
 		log.Printf("config: setenv - {key}:{value} {%s}:{%s};", key, val)
 	}
 
-	log.Print("config: end parse file file")
+	log.Print("config: end parse file")
 
 	return nil
 }
