@@ -148,7 +148,7 @@ go test ./internal/db -coverprofile=coverage.put
 go tool cover -html=coverage
 ```
 ### coverage
-| direct                                          | pesen `%` |
+| direct                                          | percent `%` |
 |:------------------------------------------------|----------:|
 | go-map-rwmu-mux/internal/db/db.go               |      88.9 |
 | go-map-rwmu-mux/internal/db/requests.go         |      81.1 |
